@@ -63,7 +63,7 @@ function display(){
         <td>${i}</td>
         <td>${bookList[i].name}</td>
         <td> 
-         <a href="${bookList[i].url}"> <button class="btn  btn-visit">
+         <a href="${bookList[i].url}" target="_blank"> <button class="btn  btn-visit">
        <i class="fa-solid fa-eye"></i>
        Visit
        </button></a>
