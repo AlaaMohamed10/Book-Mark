@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stayle.css">
+</head>
+<body>
+    
+    <div class="main-content container  py-5">
+        <h1 class=" py-2  position-relative">Bookmarker
+            <div class="h1-makan"></div>
+        </h1>
+        <div class="bookmark-body py-2 mt-5">
+            <h2 class="mt-4 text-center">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="mb-4 ">
+                <label for="bookmarkName"  class=" fw-bold  form-label"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                <input oninput="nameValidation()"  type="text" id="bookmarkName" class="w-100 form-control " placeholder="Bookmark Name" >
+            </div>
+            <div class="mb-3">
+                <label for="bookmarkUrl" class=" fw-bold form-label"><i class="fa-solid fa-link pe-2"></i>Site Url</label>
+                <input oninput="urlValidation()" type="text" id="bookmarkUrl" class="w-100 form-control" placeholder="Website Url">
+            </div>
+            <!-- ///////////////////////////////////////////////////////////////////// -->
+            <div  id="contantDiv" class="mb-3">
+            </div>
+            <!-- ///////////////////////////////////////////////////////////////////////// -->
+            <div class="text-center">
+                <button onclick=" addTable()" class="btn btn-submit ">Submit</button>
+                
+               </div>
+            </div>
+               <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">Index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                  
+                </tbody>
+
+            </table>
+
+  
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
